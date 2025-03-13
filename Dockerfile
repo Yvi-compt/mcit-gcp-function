@@ -2,8 +2,9 @@
 #WORKDIR /app
 #COPY . /app
 #RUN pip install -r requirements.txt
-#CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]# Utilisez une image de base Python*/
+#CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
 
+# Utilisez une image de base Python
 FROM python:3.9-slim
 # Définissez le répertoire de travail dans le conteneur
 WORKDIR /app
