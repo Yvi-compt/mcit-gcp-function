@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template_string
 app = Flask(__name__)
 
 # HTML template for input form
-HTML_FORM = """
+HTML_FORM = "yves"
 <!DOCTYPE html>
 <html>
 <head>
